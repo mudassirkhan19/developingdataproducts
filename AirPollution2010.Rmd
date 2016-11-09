@@ -16,10 +16,12 @@ library(dplyr)
 library(leaflet)
 air <- readRDS("data.Rda")
 airPM10 <- air %>% select(City, PM.10.Annual.average.µg.m3., PM.10.Air.Quality, lat, lng, PM10col)
-hover <- paste(airPM10$City, '<br>', "PM10 Avg:", airPM10$PM.10.Annual.average.µg.m3.)
+
 airPM10 <- airPM10 %>% filter(!is.na(PM10col)) %>% filter(!is.na(lat))
+
 airPM10 <- airPM10 %>% filter(lng > 60 & lng < 100)
-airPM10 %>% leaflet() %>%
+
+airPM10 %>% leaflet(width = '100%') %>%
     addTiles() %>%
     addCircleMarkers(color = airPM10$PM10col, popup = paste(airPM10$City, '<br>', "PM10 Avg:", airPM10$PM.10.Annual.average.µg.m3.)) %>%
     addLegend(labels = c("Critical", "High", "Moderate","Low"), colors = c("red","orange","yellow","green"))
