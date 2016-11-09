@@ -2,7 +2,7 @@
 title: "Air Pollution in India (2010)"
 author: "Muhammad Mudassir Khan"
 date: "November 9, 2016"
-output: ioslides_presentation
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
