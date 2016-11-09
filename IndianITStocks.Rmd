@@ -1,5 +1,5 @@
 ---
-title: "Indian IT Stocks over the years"
+title: "Indian IT Stock Prices over the years"
 author: "Muhammad Mudassir Khan"
 date: "November 10, 2016"
 output: ioslides_presentation
@@ -9,7 +9,7 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Top Indian IT Stocks
+## Top Indian IT Stock Prices
 
 ```{r, message=FALSE, warning=FALSE}
 library(dplyr)
