@@ -41,6 +41,12 @@ The app is simple and easy to use. You can see the geomapped data for pollution 
 
 ## Give It A Try!
 
+- Air Pollution Visualization App
 
+https://mudassirkhan19.shinyapps.io/airpollution10/
+
+- Source Code
+
+https://github.com/mudassirkhan19/developingdataproducts/tree/gh-pages/Shiny_proj/AirPollution10
 
 [1]: https://data.gov.in/resources/city-and-location-wise-ambient-air-quality-year-2010/download
