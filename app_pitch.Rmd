@@ -1,0 +1,52 @@
+---
+title: "Air Pollution in India (2010)"
+author: "Muhammad Mudassir Khan"
+date: "November 12, 2016"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+This is a course project for "Developing Data Products" offered by John Hopkins University through Coursera.
+
+As a requirement for this project I have developed a Shiny WebApp which leverages the computations provided by R and presents it in HTML so that an average user can use it.
+
+This simple app uses the air pollution data and plots average pollutant data and maps it according to its location.
+
+## The Data
+
+The data comes from [data.gov.in][1] and includes pollution data of $PM_{10}$,$NO_{2}$ and $SO_{2}$ for cities all over India.
+```{r}
+air <- readRDS("data.Rda")
+```
+
+```{r,echo=TRUE}
+str(air[1:9])
+```
+
+
+## How It Works!
+
+The app is simple and easy to use. You can see the geomapped data for pollution averages in major Indian Cities.
+
+- Select the pollutant you want to see the stats on.
+
+- Zoom in if you want to select a particular city.
+
+- Click on the colored circles to see the average pollution ($\mu$g/$m^3$) data for that city.
+
+## Give It A Try!
+
+- Air Pollution Visualization App
+
+https://mudassirkhan19.shinyapps.io/airpollution10/
+
+- Source Code
+
+https://github.com/mudassirkhan19/developingdataproducts/tree/gh-pages/Shiny_proj/AirPollution10
+
+[1]: https://data.gov.in/resources/city-and-location-wise-ambient-air-quality-year-2010/download
